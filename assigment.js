@@ -32,7 +32,7 @@ console.log(invert());
 
 // Exercise 3 :v
 function string(){
-let result = 'I am a student';
+    let result = 'I am a student';
     let finaltext = '';
     for (let i = 0; i < result.length; i++){
         let code = result.charCodeAt(i);
@@ -48,3 +48,19 @@ let result = 'I am a student';
     return finaltext;
 }
 console.log(string());
+
+// Exercise 4 :v
+function invertCase(text) {
+    let result = "";
+
+    for (let i = 0; i < text.length; i++) {
+        let letter = text[i];
+        if (letter === letter.toUpperCase()) {
+            result = result + letter.toLowerCase();
+        } else {
+            result = result + letter.toUpperCase();
+        }
+    }
+    return result;
+}
+console.log(invertCase("BanANa"));
