@@ -31,6 +31,20 @@ function invert(){
 console.log(invert());
 
 // Exercise 3 :v
-function string(upper){
-    
+function string(){
+let result = 'I am a student';
+    let finaltext = '';
+    for (let i = 0; i < result.length; i++){
+        let code = result.charCodeAt(i);
+        if (code >= 97 && code <= 122){
+            let upperCode = code - 32;
+            let upperleter = String.fromCharCode(upperCode);
+            finaltext = finaltext + upperleter;
+        }
+        else{
+            finaltext = finaltext + result[i];
+        }
+    }
+    return finaltext;
 }
+console.log(string());
