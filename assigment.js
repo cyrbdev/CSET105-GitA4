@@ -17,8 +17,20 @@ console.log(number(12, 45, 4, 5));
 let userInput = prompt('Enter a number: ');
 
 function invert(){
-    inv = userInput.split('').reverse().join('');
+    if (userInput[0] === '-'){
+        userInput = userInput.slice(1);
+        inv = userInput.split('').reverse().join('')
+        inv = '-' + inv;
+    }
+    else{
+        inv = userInput.split('').reverse().join('')
+    }
+    
     return inv;
 }
 console.log(invert());
 
+// Exercise 3 :v
+function string(upper){
+    
+}
